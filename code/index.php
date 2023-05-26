@@ -8,7 +8,7 @@
         <h1>PHP Vulnerability options.</h1>
         <ul id=list name=list>
             <li><a href="deserialization.php">Deserialization</a></li>
-            <li>SQL Injection</li>
+            <li><a href="injection.php">SQL Injection</a></li>
             <li>Type Juggling</li>
         </ul>
     </body>

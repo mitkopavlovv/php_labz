@@ -1,0 +1,29 @@
+version: '3.1'
+services:
+  app:
+    build: .
+    restart: always
+    volumes:
+      - ./code:/var/www/html
+    ports:
+      - 8081:80
+    depends_on:
+      - db
+    networks:
+      - test_net
+  db:
+    image: mysql:debian
+    restart: always
+    command: --default-authentication-plugin=mysql_native_password
+    expose:
+      - 3306
+    volumes:
+      - ./mysql_container/initialize.sql:/docker-entrypoint-initdb.d/initialize.sql
+    env_file:
+      - ./mysql_container/.env
+    networks:
+      - test_net
+
+networks:
+  test_net:
+    driver: bridge
