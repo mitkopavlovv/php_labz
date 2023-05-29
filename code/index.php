@@ -9,7 +9,7 @@
         <ul id=list name=list>
             <li><a href="deserialization.php">Deserialization</a></li>
             <li><a href="injection.php">SQL Injection</a></li>
-            <li>Type Juggling</li>
+            <li><a href="juggling.php">Type Juggling</a></li>
         </ul>
     </body>
 </html>
