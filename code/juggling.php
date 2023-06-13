@@ -31,9 +31,8 @@
                 $database_pass = $login_query["password"];
                 if ($pass_supplied == $database_pass){
                     echo "<p>Secret content</p>";
-                    echo '<img src="https://blog.mozilla.org/webdev/files/2012/06/wonka-md5.jpg" alt="Trulli" width="500" height="333">';
-                    echo "<p>PHP Type juggling deep dive</p>";
-                    echo '<img src="https://cdn.invicti.com/statics/img/blogposts/table_representing_behavior_of_PHP_with_loose_type_comparisons.png" alt="Trulli" width="500" height="333">';
+                    echo '<img src="https://blog.mozilla.org/webdev/files/2012/06/wonka-md5.jpg" alt="Trulli" width="500" height="333"></br></br>';
+                    echo "<a href='https://www.php.net/manual/en/language.types.type-juggling.php'>PHP Type juggling deep dive</a>";
                     die();
                 }
             } 
